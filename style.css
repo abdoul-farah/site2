@@ -30,7 +30,7 @@ body{
 }
 
 
-h1{
+.header h1{
   color:#000000;
   font-weight:100;
 }
@@ -70,10 +70,11 @@ h1{
     height: 400px;
   background-image: url(./images/djibouti_240.jpg);
   background-size: cover;
-  filter: grayscale(50%);
+  filter: grayscale(60%);
    box-shadow: 5px 10px 18px #888888;
  
 }
+
 
 .header h1{
     color: #ffffff;
@@ -248,7 +249,7 @@ letter-spacing: 1px;
 }
 .left img{
   /*opacity: 0.8;*/
-  filter: grayscale(100%);
+  filter: grayscale(60%);
   cursor: pointer;
   width: 100%;
   height: 100%;
@@ -270,6 +271,7 @@ letter-spacing: 1px;
 
  .sincrire a{
     padding: 10px;
+
     
   
     color: rgba(0, 0, 0, 0.5);
@@ -315,9 +317,13 @@ footer{
   grid-area: sincrire;
  /* background-color: aqua;*/
   color: black;
+  margin-top: 50px;
+  text-align: center;
+  
 }
 
 .btmail{
+  margin-top: 30px;
   grid-area: btmail;
   /*background-color: rgb(32, 165, 165);*/
 }
@@ -444,6 +450,7 @@ width: 200px;
 
 .bgst{
   padding: 10px 0 0 25px;
+
  
   
 }
@@ -453,7 +460,7 @@ width: 200px;
 .bgst:hover{
   
   cursor: pointer;
-  opacity: 0.5;
+  color: #DC143C;
 }
 
 
@@ -585,7 +592,7 @@ nav.shift ul li a:hover:after {
   .dlogo{
     position: absolute;
     top: 38px;
-    
+   
    /*
    
    border: 1px solid black;*/
@@ -663,6 +670,7 @@ nav.shift ul li a:hover:after {
 
     .header{
       margin-top: 110px;
+      
     }
     
 

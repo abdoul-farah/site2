@@ -251,8 +251,9 @@ body{
 
 
 footer{
-  padding: 30px;
-  margin-top: 20px;
+  /* background-color: #787878; */
+  padding: 0 30px;
+ 
   display: grid;
   color: #A9A9A9;
   grid-template-columns: 40% 30% 30%;
@@ -265,15 +266,15 @@ footer{
 
 .sincrire{
   grid-area: sincrire;
-  background-color: aqua;
+  /* background-color: aqua; */
   color: black;
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
   
 }
 
 .btmail{
-  margin-top: 30px;
+  margin-top: 5px;
   grid-area: btmail;
   /*background-color: rgb(32, 165, 165);*/
 }
@@ -355,15 +356,17 @@ footer{
 .aall{
   height: 100px;
   display: flex;
-  justify-content: center;
+  justify-content:center ;
   align-items: center;
-  background-color: #DC143C;
+  /* background-color: #DC143C; */
+
   
 }
 
 .allpost{
  
- background-color: blueviolet;
+ /* background-color: blueviolet; */
+ 
  
   
 }

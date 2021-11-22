@@ -8,13 +8,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Xanh+Mono:ital@1&display=swap');
 
 
+:root{
+  --main-color: #F7F4E9;
+}
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    margin: 0 150px;
+    margin: 0 12vw;
     font-family: 'Xanh Mono', monospace;
+    background-color: var(--main-color);
     
 }
 
@@ -55,15 +59,34 @@ body{
 }
 
 .header{
+  /* border: 1px solid black; */
   position: relative;
-  height: 400px;
-  background-image: url(./images/djibouti_240.jpg);
+  height: 420px;
+  background: rgb(106,179,232);
+  background: linear-gradient(324deg, rgba(106,179,232,0.7987570028011204) 45%, rgba(9,175,39,1) 94%);
+  /* background-image: url(./images/djibouti_240.jpg);
   background-size: cover;
   filter: grayscale(60%);
-  box-shadow: 5px 10px 18px #888888;
+  box-shadow: 5px 10px 18px #888888; */
  
 }
 
+.bienv{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header svg2{
+  position: absolute;
+  bottom: -10px;
+  height: 150px;
+}
+.header svg1{
+  position: absolute;
+  top: -10px;
+  height: 150px;
+}
 .header h1{
   color: #ffffff;
   font-family: 'Xanh Mono', monospace;
@@ -96,7 +119,7 @@ body{
   transform: translate(-50%, -50%);
   height: 50px;
   width: 170px;
-  background-color:  #F0FFFF;
+  background-color:  var(--main-color);
   border: none;
   padding: 13px;
   opacity: 0;
@@ -269,7 +292,8 @@ footer{
   /* background-color: aqua; */
   color: black;
   margin-top: 30px;
-  text-align: center;
+  /* text-align: center; */
+  
   
 }
 
@@ -316,6 +340,12 @@ footer{
 
 .btmail .sbm1{
   padding: 0 15px;
+  background-color: var(--main-color);
+}
+
+.btmail .sbm1:focus{
+  background-color: #dcdcdc;
+
 }
 .btmail .sbm2{
   font-size: 15px;
@@ -326,7 +356,7 @@ footer{
 
 .btmail .sbm2:hover{
   cursor: pointer;
-  background-color: white;
+  background-color: var(--main-color);
   color: black;
   border: 2px solid black;
   transition: background-color 0.3s;
@@ -440,7 +470,7 @@ footer{
 nav {
   width: 80%;
   margin: 0 auto;
-  background: #fff;
+  background: var(--main-color);
   padding: 50px 0;
   /*box-shadow: 0px 5px 0px #dedede;*/
 }
@@ -556,7 +586,7 @@ nav{
   font-size: 50px;
   border: none;
   outline: none;
-  background-color:white;
+  background-color:var(--main-color);
   color: black;
   cursor: pointer;
   padding: 15px;
@@ -757,3 +787,189 @@ nav{
     margin-top: 70px;
   }    
 }
+
+
+
+
+/*------page a propos---------------*/
+
+
+.pagepropos{
+  width: 100%;
+  /* height: 100vh; */
+  /* border: 1px solid#000000; */
+  margin: 100px 0 20px 0;
+  display: flex;
+  
+}
+
+.propos1{
+  /* border: 1px solid red; */
+  width: 45%;
+  height: 60vh;
+  float: left;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20% 60% 10%;
+  grid-template-areas: 'p1 p1'
+  'picme resume'
+  'aboutme resume';
+  position: relative;
+  
+}
+
+.p1{
+  grid-area: p1;
+/* border: 1px dotted black; */
+}
+.p1 h1{
+  text-transform: uppercase;
+}
+
+.souligne{
+  border-top: 5px solid black;
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.picme{
+  grid-area: picme;
+  /* border: 1px dotted black; */
+  
+}
+.picme img{
+  width: 100%;
+  filter: grayscale(100);
+}
+
+.aboutme{
+  grid-area: aboutme;
+  /* border: 1px dotted black; */
+  position: absolute;
+  bottom: 10px;
+  
+ 
+  
+}
+.resume{
+  grid-area: resume;
+  /* border: 1px dotted black; */
+  padding: 0 20px;
+  /* border-right: 5px solid black ;
+   */
+}
+
+.contacter{
+  /* border: 1px solid blue; */
+  width: 55%;
+  height: 60vh;
+  float: right;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas: 'cont1 cont1'
+  'message message';
+}
+
+.cont1{
+  grid-area: cont1;
+  /* border: 1px dotted rgb(3, 3, 0); */
+
+
+}
+
+.ctinfo{
+  grid-area: ctinfo;
+  /* border: 1px dotted rgb(0, 0, 0); */
+  padding: 20px 6px;
+  
+}
+.ctinfo p {
+  margin: 15px 0;
+}
+.message{
+  grid-area: message;
+  /* border: 1px dotted rgb(0, 0, 0); */
+  /* padding: 20px; */
+  
+}
+
+.message input{
+  display: block;
+  border: 1px solid black;
+
+}
+
+.message input, .message textarea{
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: var(--main-color);
+}
+
+
+.message input:focus, .message textarea:focus{
+
+    border: 1px solid black;
+    background-color: #dcdcdc;
+}
+
+
+.message input[type=submit]{
+  background-color: black;
+  color: white;
+  border: black;
+}
+
+.message input[type=submit]:hover{
+  background-color:var(--main-color);
+  color: black;
+  border: 3px solid black;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+
+#headerpro{
+  background-image: url(./images/undraw_contact_us_-15-o2.svg);
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(60%);
+  /* border: 1px solid black; */
+  
+}
+#headerpro img, .bienv img{
+
+width: 50px;
+height: 50px;
+position: absolute;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+/* border: 1px solid black; */
+opacity: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+  .pagepropos{
+    flex-direction: column;
+    margin: 0;
+  }
+  .propos1,.contacter{
+    width: 100vw;
+  }
+  .aboutme{
+    bottom: 0;
+  }
+}
+
+.sep{
+  width: 20vw;
+  border-bottom: 5px solid black;
+  margin: 20px auto;
+}
+
